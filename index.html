@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=0;
+        var b=0;
+        var c=0;
+        var d=1;
+
+        for(d=d; d==1; d=d){
+            var a = promt("Enter triangle side a");
+            if(isNaN(a)){
+                var d=1;
+            }else{
+                var d=0;
+            }
+        }
+
+        var d=1;
+        for(d=d; d==1; d=d){
+            var b = promt("Enter triangle side b");
+            if(isNaN(b)){
+                var d=1;
+            }else{
+                var d=0;
+            }
+        }
+
+        var d=1;
+        for(d=d; d==1; d=d){
+            var c = promt("Enter triangle side c");
+            if(isNaN(c)){
+                var d=1;
+            }else{
+                var d=0;
+            }
+        }
+
+        if((a==b)&&(b==c)){
+            window.alert("The triangle is EQUILATERAL");
+        }else{
+            if((a==b||a==c)&&(a!=b||a!=c)){
+                window.alert("The triangle is ISOSCELES")
+            }else{
+                window.alert("The triangle is SCALENE")
+            }
+        }
+    </script>
+</body>
+</html>
